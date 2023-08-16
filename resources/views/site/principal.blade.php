@@ -12,9 +12,9 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about-us">About-us</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="{{ route('site.index') }}">Home</a></li>
+                    <li><a href="{{ route('site.aboutus') }}">About-us</a></li>
+                    <li><a href="{{ route('site.contact') }}">Contact</a></li>
                 </ul>
             </nav>
         </header>

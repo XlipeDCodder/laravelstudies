@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class ProfessorsController extends Controller
 {
     public function professors(){
-        echo "Professors list";
+        $profs = [];
+        return view('app.professors.index', compact('profs'));
     }
 }
