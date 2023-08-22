@@ -6,18 +6,20 @@
 
 
 @isset($profs) 
-    @for($i = 0; isset($profs[$i]); $i++)
-        Professor: {{$profs[$i]['nome']}}
+    @foreach ($profs as $profs)
+        
+        Professor: {{$profs['nome']}}
         <br>
-        Status: {{$profs[$i]['status']}}
+        Status: {{$profs['status']}}
         <br>
-        Cnpj: {{$profs[$i]['cnpj']}}
+        Cnpj: {{$profs['cnpj']}}
         <br>
-        Telefone: ({{$profs[$i]['ddd'] ?? ''}}) {{$profs[$i]['telefone'] ?? 'Não informado'}}
+        Telefone: ({{$profs['ddd'] ?? ''}}) {{$prof['telefone'] ?? 'Não informado'}}
         <br>
         <br>
-        <hr>   
-    @endfor    
+        <hr>
+      Total: {{$loop->count}}     
+    @endforeach
 @endisset
     
 
