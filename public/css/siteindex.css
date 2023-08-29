@@ -21,30 +21,41 @@ html, body
     overflow: hidden;
     border-bottom: 1px solid  rgba(155, 152, 152, 0.1);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+    align-items: center;
     color: #fff;
+    /* justify-content: center; */
+    gap: 100px;
 }
 .headerlogo{
     width: 200px;
     height: 90px;
     text-align: center;
-    
-    
-}
+    box-sizing: border-box;
+    margin-left: 45%;
+    }
 
+.headermenu{
+  width: 200px;
+  height: 90px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: 15%;
+}      
 
+.headermenu nav ul{
+  display: flex;
+  padding-top: 38px;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}    
 
-
-
-
-
-
-
-
-
-
+.headermenu nav ul a{
+  text-decoration: none;
+  font-size: 17px;
+  color: #f0f9ff;
+}    
 
 
 
