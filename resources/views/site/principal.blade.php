@@ -36,7 +36,7 @@
     <div class="herocontainer">
 
         <div class="glasscard">
-            <h1>Teste de titulo!</h1>
+            <h1>Teste pull</h1>
         </div>
 
         <div class="glasscard">
