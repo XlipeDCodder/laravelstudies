@@ -43,18 +43,37 @@
             <p>A xeroteca, ou xerô para os íntimos, é um acervo digital de provas e trabalhos universitários, que tem como objetivo auxiliar os alunos em seus estudos de forma gratuita.</p> 
         </div>                             
 
-        <div class="aboutcontainer">
-            <h1>O nosso objetivo!</h1>
-            <br>
-            <div class="moldurasab">
-                <img src="{{asset('images/professor 1.png')}}" alt="">
+        <div class="title01">
+            <h1>Objetivos</h1>
+        </div>
+
+        <div class="aboutcontainer1">
+
+            <div>
+                <img src="{{asset('images/professor 1.png')}}" alt="" width="231" height="232">
+                <div class="subm">
+                    Fornecer informações sobre aquele professor da matéria que você está precisando.
+                </div>
             </div>
-            <div class="moldurasab">
-                <img src="{{asset('images/qualification 1.png')}}" alt="">
+
+            <div>           
+                <img src="{{asset('images/qualification 1.png')}}" alt="" width="231" height="231">
+                <div class="subm">
+                    Ser um repositório de provas, para ajudar nos estudos.
+                </div>                
             </div>
-            <div class="moldurasab">
-                <img src="{{asset('images/community 1.png')}}" alt="">
+
+            <div>  
+                <img src="{{asset('images/community 1.png')}}" alt="" width="231" height="231">
+                <div class="subm">
+                    Crescer como uma grande comunidade estudantil, facilitando o acesso a conteúdos de nossa universidade.
+                </div>
             </div>
+
+            <div class="title02">
+                <h1>Nossos deveres e Suas responsabilidades!</h1>
+            </div>
+
         </div> 
     </div>
 

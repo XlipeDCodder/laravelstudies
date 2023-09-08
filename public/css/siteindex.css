@@ -97,9 +97,8 @@ html, body
   color: #fff;
   margin-top: 5%;
   text-align: center;
-  /* justify-content: space-around; */
   box-sizing: border-box;
-  /* display: block; */
+  
 }
 
 .aboutcontainer h1{
@@ -110,14 +109,40 @@ html, body
   font-size: 40px;
 }
 
-.moldurasab{
-  display: inline;
-  width: 182px;
-  height: 182px;
-  flex-wrap: nowrap;
+.title01{
+  width: 100%;
+  margin-top: 5%;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
 }
 
+.aboutcontainer1{
+  width: 100%;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin-top: 8%;
+}
 
+.subm{
+  width: 231px;
+  height: 10%;
+  color: #fff;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+.title02{
+  width: 100%;
+  margin-top: 5%;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
 
 
 
