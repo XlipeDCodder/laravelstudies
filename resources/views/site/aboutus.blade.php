@@ -82,8 +82,8 @@
             </div>
 
             <div>                
-                <div class="subm">
-                    Crescer como uma grande comunidade estudantil, facilitando o acesso a conteúdos de nossa universidade.
+                <div class="subm1">
+                O intuito do projeto Xeroteca é centralizar meios de estudos e informações pertinentes para os alunos de nossa universidade, e para tal, todo o conteúdo será disponibilizados por alunos e professores de forma GRATUITA, e com isso pedimos a todos os usuários para sempre se atentar ao que será enviado e à sua qualidade e pertinência, pois a intenção é ajudar não somente a uma pessoa mas sim toda uma COMUNIDADE. 
                 </div>                
             </div>
 
