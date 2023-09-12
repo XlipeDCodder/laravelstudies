@@ -136,11 +136,21 @@ html, body
   font-size: 30px;
 }
 
+.aboutcontainer2{
+  width: 100%;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin-top: 8%;
+}
+
 .title02{
   width: 100%;
   margin-top: 5%;
   color: #fff;
-  font-size: 50px;
+  font-size: 140%;
   text-align: center;
 }
 

@@ -70,14 +70,28 @@
                 </div>
             </div>
 
-            <div class="title02">
-                <h1>Nossos deveres e Suas responsabilidades!</h1>
-            </div>
+
 
         </div> 
+
+        <div class="aboutcontainer2">
+
+            <div class="title02"> 
+                <h1>Nossos deveres e Suas responsabilidades!</h1>
+                <img src="{{asset('images/responsibility 1.png')}}">               
+            </div>
+
+            <div>                
+                <div class="subm">
+                    Crescer como uma grande comunidade estudantil, facilitando o acesso a conteúdos de nossa universidade.
+                </div>                
+            </div>
+
+        </div>
+
     </div>
 
-
+    
 
 
 
