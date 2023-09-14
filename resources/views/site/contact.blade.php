@@ -42,6 +42,7 @@
             <input type="text" id="fullname" class="fullname"><br>
             <label for="emailcontact">Email:</label><br>
             <input type="email" id="emailcontact" class="emailcontact"><br>
+            <label for="subjectcontact">Assunto:</label>
         </form>
     </div>
 
