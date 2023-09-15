@@ -215,7 +215,20 @@ html, body
 
 .btnabt{
   margin-top: 1%;
-  margin-left: 4.4%;
+  margin-left: 46%;
+  background: #535353 !important;
+  border-color: #919191 !important;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 16px;  
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+  position: relative;
+  margin-bottom: 20px;
+  transition: 0.3s;
 }
 
 /* Hero section */
