@@ -28,12 +28,14 @@ Route::get('/contact',  [ContactController::class, 'contact'])->name('site.conta
 
 Route::get('/login', [LoginController::class, 'login'])->name('site.login');
 
+Route::get('/professors', [ProfessorsController::class, 'professors']);
+
 
 Route::prefix('/app')->group(function(){
 
         Route::get('/clients', [ClientsController::class, 'clients']);
 
-        Route::get('/professors', [ProfessorsController::class, 'professors']);
+        
 
         Route::get('/exams', [ExamsController::class, 'exams']);
 

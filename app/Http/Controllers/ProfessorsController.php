@@ -26,6 +26,6 @@ class ProfessorsController extends Controller
         ];
 
         
-        return view('app.professors.index', compact('profs'));
+        return view('site.professors', compact('profs'));
     }
 }
