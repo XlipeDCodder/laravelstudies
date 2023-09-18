@@ -10,7 +10,7 @@
 
 <body>
 
-<header>
+    <header>
         <div class="headercontainer">
 
             <div class="headerlogo">
@@ -37,9 +37,19 @@
     <div class="herocontainer">
 
         <div class="glasscard">
-            <h1>Teste pull2</h1>
+
+            <div class="contprof">
+                
+            </div>
+
+            <div class="profinfos">
+                <h1>Nome:</h1><br>
+                <h1>Email:</h1><br>
+                <h1><a href="#">Matérias: Clique para ver.</a></h1>
+            </div> 
+
         </div>
-     
+        
     </div>
 
 
@@ -87,8 +97,8 @@
         </footer>
     </div>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
 
 </body>
 

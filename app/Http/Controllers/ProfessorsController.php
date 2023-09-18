@@ -13,7 +13,8 @@ class ProfessorsController extends Controller
                 'status' => 'Active',
                 'cnpj' => '12.345.678/0001-00',
                 'ddd' => '71', //Salvador
-                'telefone' => null
+                'telefone' => null,
+                'email' => 'teste123@gmail.com'
             ],
 
             1 => [
@@ -21,7 +22,8 @@ class ProfessorsController extends Controller
                 'status' => 'Active',
                 'cnpj' => '12.345.678/0001-00',
                 'ddd' => '75', //Bahia Geral
-                'telefone' => null
+                'telefone' => null,
+                'email' => 'teste123@gmail.com'
             ]
         ];
 
