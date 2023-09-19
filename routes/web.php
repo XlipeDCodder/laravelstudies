@@ -25,6 +25,7 @@ Route::get('/', [PrincipalController::class, 'principal'])->name('site.index');
 Route::get('/about-us',  [AboutUsController::class, 'about'])->name('site.aboutus');
 
 Route::get('/contact',  [ContactController::class, 'contact'])->name('site.contact');
+Route::post('/contact',  [ContactController::class, 'contact'])->name('site.contact');
 
 Route::get('/login', [LoginController::class, 'login'])->name('site.login');
 
