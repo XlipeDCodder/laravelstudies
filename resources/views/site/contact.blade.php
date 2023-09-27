@@ -39,10 +39,6 @@
         <h1> Mande sua mensagem </h1>
         <form action="{{ route('site.contact') }}" method="POST" class="formabt" >
             @csrf
-            <label for="fullname" class="inputsabt">Nome Completo:</label><br>
-            <input type="text" name="fullname" class="inputabtcss inputsabt"><br>
-            <label for="emailcontact" class="inputsabt">Email:</label><br>
-            <input type="email" name="emailcontact" class="inputabtcss inputsabt"><br>
             <label for="subjectcontact" class="inputsabt">Assunto:</label><br>
             <input type="text" name="subjectcontact" class="inputabtcss inputsabt"><br>
             <label for="messageabout" class="inputsabt">Mensagem:</label><br>
