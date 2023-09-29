@@ -184,11 +184,22 @@ html, body
    margin-bottom: 5%;
 }
 
+.contactform1 h1{
+  color: #fff;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .contactform{
   width: 50%;
   color: #fff;
 }
 
+.contactform1{
+  width: 100%;
+  color: #fff;
+}
 
 .inputsabt{
   width: 90%;
