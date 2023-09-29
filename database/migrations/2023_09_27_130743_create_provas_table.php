@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('provas', function (Blueprint $table) {
             $table->id();
+            $table->string('path');
+            $table->boolean('status');
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('materia_id')->references('id')->on('materias');
+            $table->foreignId('professor_id')->references('id')->on('professors');
+            $table->foreignId('instituto_id')->references('id')->on('institutos');
             $table->timestamps();
         });
     }
