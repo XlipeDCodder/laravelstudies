@@ -39,15 +39,25 @@
             @csrf
             <label for="selectinstitutos">Instituto:</label> 
 
-            <select name="Institutos" class="">
+            <select name="selectinstitutos" class="formp">
                <option value="Institutos">IME</option>
+               
             </select>
+
+            <br>
 
             <label for="selectcursos">Curso:</label> 
 
-            <select name="Cursos" class="">
+            <select name="selectcursos" class="formp">
                <option value="Cursos">Calculo A</option>
-            </select>            
+            </select>  
+            
+            <br>
+
+            <label for="myfile">Selecione o arquivo:</label>
+
+            <input type="file" id="myfile" name="myfile" class="formp"><br>
+            <input type="submit" class="btnp"> 
 
         </form>
     </div>
