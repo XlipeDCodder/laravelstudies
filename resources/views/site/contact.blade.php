@@ -39,8 +39,8 @@
         <h1> Mande sua mensagem </h1>
         <form action="{{ route('site.contact') }}" method="POST" class="formabt" >
             @csrf
-            <label for="subjectcontact" class="inputsabt">Assunto:</label><br>
-            <input type="text" name="subjectcontact" class="inputabtcss inputsabt"><br>
+            <label for="descricao" class="inputsabt">Motivo da mensagem:</label><br>
+            <input type="text" name="descricao" class="inputabtcss inputsabt"><br>
             <label for="messageabout" class="inputsabt">Mensagem:</label><br>
             <textarea name="messageabout" id="messageabout" class="inputtextarea inputsabt"></textarea>
             <input type="submit" value="Enviar" class="btnabt" >
