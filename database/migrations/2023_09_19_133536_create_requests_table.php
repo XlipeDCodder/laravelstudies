@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('requests', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('user_id')->references('id')->on('users');
-            $table->foreignId('admin_id')->references('id')->on('users');
+            $table->foreignId('user_id')->nullable()->references('id')->on('users');
+            $table->foreignId('admin_id')->nullable()->references('id')->on('users');
             $table->string('descricao',100);
             $table->string('categoria',100);
-            $table->boolean('status');
+            $table->boolean('status')->default(0);
             $table->text('messageabout');
         });
     }
