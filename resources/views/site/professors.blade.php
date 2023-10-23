@@ -35,21 +35,23 @@
 
 
     <div class="herocontainer">
-
+        @foreach ($profs as $prof)
         <div class="glasscard">
 
             <div class="contprof">
                 
             </div>
 
+            
             <div class="profinfos">
-                <h1>Nome:</h1><br>
-                <h1>Email:</h1><br>
+                <h1>Nome: {{$prof['nome']}}</h1><br>
+                <h1>Email: {{$prof['email']}}</h1><br>
                 <h1><a href="#">Matérias: Clique para ver.</a></h1>
             </div> 
+            
 
         </div>
-        
+        @endforeach
     </div>
 
 

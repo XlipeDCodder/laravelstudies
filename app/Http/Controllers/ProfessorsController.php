@@ -25,7 +25,9 @@ class ProfessorsController extends Controller
                 'telefone' => null,
                 'email' => 'teste123@gmail.com'
             ]
-        ];
+        ]; 
+
+        // dd($profs);
 
         
         return view('site.professors', compact('profs'));
