@@ -16,26 +16,27 @@ use App\Http\Controllers\CadastroProva;
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
+
+|Route::get('/', [PrincipalController::class, 'principal'])->name('site.index');
+
+
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
 */
 
-Route::get('/', [PrincipalController::class, 'principal'])->name('site.index');
+Route::get('/', [LoginController::class, 'login'])->name('site.login');
 
-Route::get('/about-us',  [AboutUsController::class, 'about'])->name('site.aboutus');
+Route::get('/sobre',  [AboutUsController::class, 'about'])->name('site.aboutus');
 
 Route::match(array('get','post'), '/contact',  [RequestController::class, 'contact'])->name('site.contact');
 
-Route::get('/login', [LoginController::class, 'login'])->name('site.login');
+Route::get('/home', [PrincipalController::class, 'principal'])->name('site.index');
 
 Route::get('/professors', [ProfessorsController::class, 'professors']);
 
-Route::get('/exams', [ProvaController::class, 'exams']);
-
-Route::get('/clients', [UserController::class, 'clients']);
+Route::get('/provas', [ProvaController::class, 'exams']);
 
 Route::match(array('get','post'), '/cadastrop',  [CadastroProva::class, 'crudprova'])->name('site.cadastro');
 
