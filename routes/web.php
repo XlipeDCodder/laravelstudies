@@ -12,6 +12,7 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\InstitutoController;
 use App\Http\Controllers\MateriaController;
 use App\Http\Controllers\CadastroProva;
+use App\Http\Controllers\RegistroController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +26,7 @@ use App\Http\Controllers\CadastroProva;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 
 Route::get('/', [LoginController::class, 'login'])->name('site.login');
 
@@ -40,11 +42,13 @@ Route::get('/provas', [ProvaController::class, 'exams']);
 
 Route::match(array('get','post'), '/cadastrop',  [CadastroProva::class, 'crudprova'])->name('site.cadastro');
 
+Route::get('/registro', [RegistroController::class, 'create'])->name('site.registro');
+
 Route::prefix('/jimin')->group(function(){
 
 });
 
-Route::get('/test/{p1}/{p2}', [TestController::class, 'test']);
+
 
 Route::fallback(function(){
        echo 'The route accessed does not exist, please click <a href="'.route('site.index').'">HERE</a> to return to the main page.'; 
