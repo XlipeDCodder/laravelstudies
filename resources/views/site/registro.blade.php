@@ -37,7 +37,21 @@
 
     <div class="herocontainer">
 
-    
+    <div class="regiscontainer">
+
+                <div class="brand-title">
+                    Cadastre-se
+                </div>
+
+                <div class="inputs">
+                        <label>Email</label>
+                        <input type="email" placeholder="SeuEmail@exemplo.com" />
+                        <label>Nome</label>
+                        <input type="text" placeholder="Seu nome completo" />                
+                        <label>Senha</label>
+                        <input type="password" placeholder="Insira uma Senha" />
+                        <button type="submit">CADASTRAR</button>
+                </div>
 
     </div>
 
