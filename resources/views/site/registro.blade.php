@@ -37,6 +37,8 @@
 
     <div class="herocontainer">
 
+    <form method="POST" action="/registro">
+        @csrf
     <div class="regiscontainer">
 
                 <div class="brand-title">
@@ -45,17 +47,17 @@
 
                 <div class="inputs">
                         <label>Email</label>
-                        <input type="email" placeholder="SeuEmail@exemplo.com" />
+                        <input name="email" type="email" placeholder="SeuEmail@exemplo.com" />
                         <label>Nome</label>
-                        <input type="text" placeholder="Seu nome completo" />                
+                        <input name="name" type="text" placeholder="Seu nome completo" />                
                         <label>Senha</label>
-                        <input type="password" placeholder="Insira uma Senha" />
+                        <input name="password" type="password" placeholder="Insira uma Senha" />
                         <button type="submit">CADASTRAR</button>
                 </div>
 
     </div>
-
-    
+    </form>
+     
 
 
 

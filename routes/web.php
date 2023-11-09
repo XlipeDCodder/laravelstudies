@@ -42,7 +42,8 @@ Route::get('/provas', [ProvaController::class, 'exams']);
 
 Route::match(array('get','post'), '/cadastrop',  [CadastroProva::class, 'crudprova'])->name('site.cadastro');
 
-Route::match(array('get','post'),'/registro', [RegistroController::class, 'create'])->name('site.registro');
+Route::get('/registro', [RegistroController::class, 'create'])->name('site.registro');
+Route::post('/registro', [RegistroController::class, 'store'])->name('site.registro');
 
 Route::prefix('/jimin')->group(function(){
 

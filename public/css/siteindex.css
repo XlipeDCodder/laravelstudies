@@ -276,7 +276,7 @@ html, body
 
 /* form registro section */
 
-/* .regiscontainer {
+ .regiscontainer {
   position: relative;
   width: 350px;
   height: 500px;
@@ -310,7 +310,7 @@ html, body
   margin-top: 15%;
 }
 
-label {
+.inputs label {
   display: block;
   width: 100%;
   padding: 0;
@@ -320,8 +320,8 @@ label {
   color: white;
 }
 
-input,
-button {
+.inputs input,
+.inputs button {
   display: block;
   width: 100%;
   padding: 0;
@@ -330,29 +330,29 @@ button {
   box-sizing: border-box;
 }
 
-label {
+.inputs label {
   margin-bottom: 4px;
 }
 
-label:nth-of-type(2) {
+.inputs label:nth-of-type(2) {
   margin-top: 12px;
 }
 
-input::placeholder {
+.inputs input::placeholder {
   color: rgb(0, 0, 0);
 }
 
-input {
-  background: #e7e7e7;
+.inputs input {
+  /* background: #e7e7e7; */
   padding: 10px;
   padding-left: 20px;
   height: 50px;
   font-size: 14px;
   border-radius: 50px;
-  box-shadow: inset 6px 6px 6px #ffffff, inset -6px -6px 6px #ffffff;
+  
 }
 
-button {
+.inputs button {
   margin-top: 20px;
   
   height: 40px;
@@ -360,27 +360,22 @@ button {
   cursor: pointer;
   font-weight: 900;
   background: #979797;
-  box-shadow: 16px 16px 32px #686868,
-      -16px -16px 32px #363636;
+  box-shadow: 3px -3px 15px #747474;
   color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 
-button:hover {
+.inputs button:hover {
   box-shadow: none;
 }
 
 
 
-h1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 
 
- */
+
+ 
 
 
 
