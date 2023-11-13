@@ -25,7 +25,7 @@ class RegistroController extends Controller
         
         
         
-        return redirect()->to('/');
+        return redirect()->to('/home');
     }
 }
 
