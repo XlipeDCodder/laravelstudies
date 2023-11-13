@@ -21,9 +21,14 @@ class RegistroController extends Controller
             'password' => 'required'
         ]);
         
+
+        if(User::where('email','=',request('email'))->exists()){
+            return view('site.registro')->with('ErrorMsg','Email ja existente.');
+        }
+
         $user = User::create(request(['name', 'email', 'password']));
         
-        
+        auth()->login($user);
         
         return redirect()->to('/home');
     }

@@ -21,9 +21,15 @@
             <div class="headermenu">
                 <nav>
                     <ul>
+                    @if( auth()->check() )
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">{{ auth()->user()->name }}</a>
+                        </li>
+                    @else
                         <li><a href="{{ route('site.index') }}">Home</a></li>
                         <li><a href="{{ route('site.aboutus') }}">About-us</a></li>
                         <li><a href="{{ route('site.contact') }}">Contact</a></li>
+                    @endif
                     </ul>
                 </nav>
 
@@ -88,6 +94,7 @@
                     </div>
 
                     <div class="about">
+                        
                         <div class="col-sm-6 col-md-3 item">
                             <h3>About</h3>
                             <ul>
