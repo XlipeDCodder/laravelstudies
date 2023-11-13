@@ -25,7 +25,7 @@ class RegistroController extends Controller
         
         
         
-        return redirect()->to('/home')->with('msg','criado com sucesso');
+        return redirect()->to('/');
     }
 }
 

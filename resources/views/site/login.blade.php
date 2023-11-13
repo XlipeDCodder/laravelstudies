@@ -37,7 +37,25 @@
 
     <div class="herocontainer">
 
+    <form method="POST" action="/login">
+        @csrf
+    <div class="regiscontainer">
 
+                <div class="brand-title">
+                    Login
+                </div>
+
+                <div class="inputs">
+                        <label>Email</label>
+                        <input name="email" type="email" placeholder="SeuEmail@exemplo.com" />
+                
+                        <label>Senha</label>
+                        <input name="password" type="password" placeholder="Insira sua Senha" />
+                        <button type="submit">Login</button>
+                </div>
+
+    </div>
+    </form>
 
     </div>
 

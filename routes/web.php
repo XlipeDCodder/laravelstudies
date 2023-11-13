@@ -27,8 +27,9 @@ use App\Http\Controllers\RegistroController;
 |
 */
 
-
 Route::get('/', [LoginController::class, 'login'])->name('site.login');
+
+Route::get('/login', [LoginController::class, 'login'])->name('site.login');
 
 Route::get('/sobre',  [AboutUsController::class, 'about'])->name('site.aboutus');
 
