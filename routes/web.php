@@ -28,8 +28,9 @@ use App\Http\Controllers\RegistroController;
 */
 
 Route::get('/', [LoginController::class, 'login'])->name('site.login');
-// Route::post('/', [LoginController::class, 'store'])->name('site.login');
-// Route::get('/', [LoginController::class, 'destroy'])->name('site.login');
+Route::get('/login', [LoginController::class, 'login'])->name('site.login');
+Route::post('/login', [LoginController::class, 'store'])->name('site.login');
+Route::get('/logout', [LoginController::class, 'destroy'])->name('site.logout');
 
 Route::get('/login', [LoginController::class, 'login'])->name('site.login');
 

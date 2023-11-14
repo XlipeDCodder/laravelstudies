@@ -12,7 +12,7 @@ class LoginController extends Controller
    public function store()
     {
         if (auth()->attempt(request(['email', 'password'])) == false) {
-            return back();
+            return view('site.login')->with('ErrorMsg1','Senha incorreta.');
         }
         
         return redirect()->to('/home');

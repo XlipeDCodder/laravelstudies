@@ -25,6 +25,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">{{ auth()->user()->name }}</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('site.logout')}}"><ion-icon name="log-out-outline"></ion-icon></a>
+                        </li>
+
                     @else
                         <li><a href="{{ route('site.index') }}">Home</a></li>
                         <li><a href="{{ route('site.aboutus') }}">About-us</a></li>

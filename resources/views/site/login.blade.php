@@ -109,6 +109,12 @@
 
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+@if(!empty($ErrorMsg1))
+    const msg = '{!! $ErrorMsg1 !!}';
+    alert( msg );
+@endif
+</script>   
 </body>
 </html>
