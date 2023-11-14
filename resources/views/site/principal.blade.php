@@ -31,9 +31,9 @@
                         </li>
 
                     @else
-                        <li><a href="{{ route('site.index') }}">Home</a></li>
-                        <li><a href="{{ route('site.aboutus') }}">About-us</a></li>
-                        <li><a href="{{ route('site.contact') }}">Contact</a></li>
+                        <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
+                        <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
+                        <li><a href="{{ route('site.contact') }}">Contato</a></li>
                     @endif
                     </ul>
                 </nav>
