@@ -9,8 +9,9 @@ class RegistroController extends Controller
 {
     
     public function create(Request $request){
-        // dd($request);
-        return view('site.registro');
+        if(auth()->check()){
+            return view('site.principal')->with('ErrorMsg2','Desconecte para fazer um novo cadastro.');
+        }return view('site.registro');
     }
     
     public function store()

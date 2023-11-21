@@ -13,6 +13,7 @@ use App\Http\Controllers\InstitutoController;
 use App\Http\Controllers\MateriaController;
 use App\Http\Controllers\CadastroProva;
 use App\Http\Controllers\RegistroController;
+use App\Http\Controllers\ResetSenhaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +34,8 @@ Route::post('/login', [LoginController::class, 'store'])->name('site.login');
 Route::get('/logout', [LoginController::class, 'destroy'])->name('site.logout');
 
 Route::get('/login', [LoginController::class, 'login'])->name('site.login');
+
+Route::get('/resetsenha', [ResetSenhaController::class, 'reset'])->name('site.reset');
 
 Route::get('/sobre',  [AboutUsController::class, 'about'])->name('site.aboutus');
 
@@ -56,7 +59,7 @@ Route::prefix('/jimin')->group(function(){
 
 
 Route::fallback(function(){
-       echo 'The route accessed does not exist, please click <a href="'.route('site.index').'">HERE</a> to return to the main page.'; 
+       echo 'A página acessada não existe por favor clique <a href="'.route('site.index').'">AQUI</a> para retornar a página principal.'; 
 });
 
 

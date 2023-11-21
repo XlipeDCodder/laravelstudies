@@ -25,7 +25,7 @@
                     <ul>
                         <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
                         <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
-                        <li><a href="{{ route('site.contact') }}">Contato</a></li>
+                        <!-- <li><a href="{{ route('site.contact') }}"></a></li> -->
                     </ul>
                 </nav>
 

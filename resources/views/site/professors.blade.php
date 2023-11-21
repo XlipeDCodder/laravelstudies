@@ -20,9 +20,20 @@
             <div class="headermenu">
                 <nav>
                     <ul>
-                        <li><a href="{{ route('site.index') }}">Home</a></li>
-                        <li><a href="{{ route('site.aboutus') }}">About-us</a></li>
-                        <li><a href="{{ route('site.contact') }}">Contact</a></li>
+                    @if( auth()->check() )
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">{{ auth()->user()->name }}</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('site.logout')}}"><ion-icon name="log-out-outline"></ion-icon></a>
+                        </li>
+
+                    @else
+                        <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
+                        <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
+                        <li><a href="{{ route('site.login') }}">Login</a></li>
+                    @endif
                     </ul>
                 </nav>
 

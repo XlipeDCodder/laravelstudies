@@ -23,9 +23,9 @@
             <div class="headermenu">
                 <nav>
                     <ul>
-                        <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
+                        <!-- <li><a href="{{ route('site.registro') }}">Registre-se</a></li> -->
                         <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
-                        <li><a href="{{ route('site.contact') }}">Contato</a></li>
+                        <li><a href="{{ route('site.login') }}">Login</a></li>
                     </ul>
                 </nav>
 
@@ -114,5 +114,8 @@
     alert( msg );
 @endif
 </script>  
+
+
+
 </body>
 </html>

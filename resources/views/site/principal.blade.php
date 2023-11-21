@@ -33,7 +33,7 @@
                     @else
                         <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
                         <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
-                        <li><a href="{{ route('site.contact') }}">Contato</a></li>
+                        <li><a href="{{ route('site.login') }}">Login</a></li>
                     @endif
                     </ul>
                 </nav>
@@ -133,5 +133,13 @@
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+
+<script>
+@if(!empty($ErrorMsg2))
+    const msg1 = '{!! $ErrorMsg2 !!}';
+    alert( msg1 );
+@endif
+</script>
+
 </body>
 </html>
