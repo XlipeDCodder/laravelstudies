@@ -370,9 +370,15 @@ html, body
 }
 
 
+.regiscontainer li a{
+  text-decoration: none;
+  color: #000000;
+  margin-left: 2%;
+}
 
-
-
+.regiscontainer h3{
+  text-align: center;
+}
 
 
  
