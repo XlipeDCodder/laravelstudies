@@ -1,0 +1,1 @@
+<a href="{{route('site.resetlink', $token)}}">Reset senha</a>

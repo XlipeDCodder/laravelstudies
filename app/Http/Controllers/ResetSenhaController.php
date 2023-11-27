@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades;
+use Illuminate\Support\Facades\Mail;
 
 class ResetSenhaController extends Controller
 {
@@ -25,6 +27,16 @@ class ResetSenhaController extends Controller
             'created_at' => Carbon::now()
         ]);
 
-        
+        Mail::send("resetmail", ['token' => $token], function ($message) use ($request){
+            $message->to($request->email);
+            $message->subject("Reset de senha");
+        });
+            
+        return redirect()->to(route('site.reset'));
     }
+
+    public function resetlink(){
+
+    }
+
 }
