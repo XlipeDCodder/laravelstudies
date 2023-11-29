@@ -271,6 +271,38 @@ html, body
   margin-bottom: 2%;
 }
 
+
+
+
+.loggedmenu{
+  height: 100%;
+  width: 100%;
+  /* padding-top: 9%; */
+  text-align: center;
+  font-size: larger;
+  justify-content: space-around;
+  margin-left: -50%;
+  display: flex;
+  
+}
+
+.loggedmenu a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.loggedmenu ul{
+  padding-top: 10%;
+  width: 100%;
+}
+
+.loggedmenu ul li{
+  
+  list-style-type: none;
+}
+
+
+
 /* Hero section */
 
 

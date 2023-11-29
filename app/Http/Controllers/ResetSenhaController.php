@@ -25,7 +25,7 @@ class ResetSenhaController extends Controller
         DB::table(table:'password_reset_tokens')->insert([
             'email' => $request->email,
             'token' => $token,
-            'created_at' => Carbon::now()
+            'created_at' => Carbon::now(),
         ]);
 
         Mail::send("site.resetmail", ['token' => $token], function ($message) use ($request){
@@ -36,8 +36,25 @@ class ResetSenhaController extends Controller
         return redirect()->to(route('site.reset'));
     }
 
-    public function resetlink(){
+    public function resetlink($token){
+        return view ("novasenha", compact('token'));
+    }
 
+
+    public function novasenha(Request $request){
+        $request->validate([
+            'email' => "required|email|exists:users",
+            'password' => "required|string|min:6|confirmed",
+            'password_confirmation' => "required" 
+        ]);
+
+        $updateSenha = DB::table('password_reset_tokens')->where([
+            "email" => $request->email,
+            "token" => $request->token,
+        ])->first();
+        if(!$updateSenha){
+            return redirect()->to(route('site.resetlink'));
+        }
     }
 
 }

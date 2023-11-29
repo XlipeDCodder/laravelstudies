@@ -7,87 +7,66 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link type="text/css" rel="stylesheet" href="{{asset('css/siteindex.css')}}"    >
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
 </head>
 <body>
 
     <header>
         <div class="headercontainer">
-            
 
-            @if( !auth()->check() )
             <div class="headerlogo">
                 <img src="{{asset('images/logo01.png')}}"/>
             </div>
-            @endif
+
             <div class="headermenu">
-                
-                @if( auth()->check() )
-                    <div class="loggedmenu">
-                        <ul>
-                            <li><a  href="#">{{ auth()->user()->name }}</a></li>
-                            <li><a  href="{{route('site.logout')}}"><ion-icon name="log-out-outline"></ion-icon></a></li>
-                            <li><a  href="">arroz</ion-icon></a></li>
-                            <li><a  href="">feijão</ion-icon></a></li>
-                            <li><a  href="">batata</ion-icon></a></li>
-                        </ul>
-                            
-                    </div>            
-                @else
                 <nav>
                     <ul>
-
-                        <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
+                        <!-- <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
                         <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
-                        <li><a href="{{ route('site.login') }}">Login</a></li>
-                    
+                        <li><a href="{{ route('site.contact') }}"></a></li> -->
                     </ul>
                 </nav>
-                @endif
+
             </div>
 
         </div>
         
     </header>
- 
 
     <div class="herocontainer">
 
-        <div class="glasscard">
-            <h1>Teste pull2</h1>
-        </div>
+    <form method="POST" action="/novasenha">
+        @csrf
+        <input type="text" name="token" hidden value="{{$token}}">
+        <div class="regiscontainer">
 
-        <div class="glasscard">
-            <h1>Teste de titulo!</h1>
-        </div>
+                    <div class="brand-title">
+                        Insira a nova senha
+                    </div>
 
-        <div class="glasscard">
-            <h1>Teste de titulo!</h1>
-        </div>
+                    <div class="inputs">
 
-        <div class="glasscard">
-            <h1>Teste de titulo!</h1>
-        </div>
+                            <label>Email</label>
+                            <input name="email" type="email" placeholder="SeuEmail@exemplo.com" />                    
 
-        <div class="glasscard">
-            <h1>Teste de titulo!</h1>
-        </div>
+                            <label>Nova senha</label>
+                            <input name="password" type="password" placeholder="Insira sua nova senha" />
 
-        <div class="glasscard">
-            <h1>Teste de titulo!</h1>
-        </div>
+                            <label>Confirme sua senha</label>
+                            <input name="password_confirmation" type="password" placeholder="Confirme sua nova senha" />
 
-        <div class="glasscard">
-            <h1>Teste de titulo!</h1>
-        </div>
+                            <button type="submit">Enviar</button>
+                    </div>
 
-        <div class="glasscard">
-            <h1>Teste de titulo!</h1>
-        </div>                                
+
+        </div>
+    </form>
 
     </div>
 
-
+    
 
 
 
@@ -100,12 +79,11 @@
                         <ul>
                             <li><a href="#">Web design</a></li>
                             <li><a href="#">Development</a></li>
-                            {{-- <li><a href="#">Hosting</a></li> --}}
+                            <li><a href="#">Hosting</a></li>
                         </ul>
                     </div>
 
                     <div class="about">
-                        
                         <div class="col-sm-6 col-md-3 item">
                             <h3>About</h3>
                             <ul>
@@ -138,14 +116,12 @@
 
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
-
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script>
-@if(!empty($ErrorMsg2))
-    const msg1 = '{!! $ErrorMsg2 !!}';
-    alert( msg1 );
+@if(!empty($ErrorMsg1))
+    const msg = '{!! $ErrorMsg1 !!}';
+    alert( msg );
 @endif
-</script>
-
+</script>   
 </body>
 </html>

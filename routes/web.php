@@ -37,6 +37,7 @@ Route::get('/login', [LoginController::class, 'login'])->name('site.login');
 Route::get('/resetsenha', [ResetSenhaController::class, 'reset'])->name('site.reset');
 Route::post('/resetsenha', [ResetSenhaController::class, 'resetpost'])->name('site.reset.post');
 Route::get('/resetlink/{token}', [ResetSenhaController::class, 'resetlink'])->name('site.resetlink');
+Route::post('/novasenha', [ResetSenhaController::class, 'novasenha'])->name('site.novasenha');
 
 Route::get('/sobre',  [AboutUsController::class, 'about'])->name('site.aboutus');
 
