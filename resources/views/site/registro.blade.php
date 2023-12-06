@@ -16,20 +16,7 @@
     <header>
         <div class="headercontainer">
 
-            <div class="headerlogo">
-                <img src="{{asset('images/logo01.png')}}"/>
-            </div>
 
-            <div class="headermenu">
-                <nav>
-                    <ul>
-                        <!-- <li><a href="{{ route('site.registro') }}">Registre-se</a></li> -->
-                        <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
-                        <li><a href="{{ route('site.login') }}">Login</a></li>
-                    </ul>
-                </nav>
-
-            </div>
 
         </div>
         
