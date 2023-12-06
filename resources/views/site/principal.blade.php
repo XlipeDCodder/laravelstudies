@@ -20,31 +20,35 @@
                 <img src="{{asset('images/logo01.png')}}"/>
             </div>
             @endif
-            <div class="headermenu">
+           
                 
                 @if( auth()->check() )
                     <div class="loggedmenu">
                         <ul>
                             <li><a  href="#">{{ auth()->user()->name }}</a></li>
+                            <li><a  href="">Provas</ion-icon></a></li>
+                            <li><a  href="/professors">Professores</ion-icon></a></li>                            
                             <li><a  href="{{route('site.logout')}}"><ion-icon name="log-out-outline"></ion-icon></a></li>
-                            <li><a  href="">arroz</ion-icon></a></li>
-                            <li><a  href="">feijão</ion-icon></a></li>
-                            <li><a  href="">batata</ion-icon></a></li>
+                            
                         </ul>
                             
                     </div>            
                 @else
-                <nav>
-                    <ul>
+                <div class="headermenu">
+                    <div class="unlogmenu">
+                        
+                        <ul>
 
-                        <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
-                        <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
-                        <li><a href="{{ route('site.login') }}">Login</a></li>
-                    
-                    </ul>
-                </nav>
+                            <li><a href="{{ route('site.registro') }}">Registre-se</a></li>
+                            <li><a href="{{ route('site.aboutus') }}">Sobre</a></li>
+                            <li><a href="{{ route('site.login') }}">Login</a></li>
+                            
+                        </ul>
+                        
+                    </div>
+                    </div>
+
                 @endif
-            </div>
 
         </div>
         

@@ -9,7 +9,7 @@ class LoginController extends Controller
    public function login(){
       if(auth()->check()){
         return redirect()->to('/home');
-      }
+      }else
       return view('site.login');
    }
    public function store()

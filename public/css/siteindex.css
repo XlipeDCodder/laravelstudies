@@ -32,42 +32,58 @@ html, body
     box-sizing: border-box;
     overflow: hidden;
     border-bottom: 1px solid  rgba(155, 152, 152, 0.1);
-    display: flex;
-    align-items: center;
+    /* align-items: center; */
     color: #fff;
-    /* justify-content: center; */
-    gap: 100px;
+    display: flex;
+
 }
 .headerlogo{
-    width: 200px;
+    width: 90px;
     height: 90px;
     text-align: center;
     box-sizing: border-box;
-    margin-left: 45%;
+    
     }
 
 .headermenu{
   width: 300px;
   height: 90px;
   box-sizing: border-box;
+  
+  
+}   
+
+.headermenu nav{
+  height: 100%;
   text-align: center;
-  margin-left: 15%;
-}      
+}
 
-.headermenu nav ul{
-  display: flex;
-  padding-top: 38px;
-  list-style: none;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}    
+.headermenu ul{
+  
+  padding-top: 10%;
+  
+}
 
-.headermenu nav ul a{
+.headermenu li{
+  list-style-type: none;
+  display: inline-flex;
+
+}
+
+.headermenu a{
+  color: #ffffff;
   text-decoration: none;
-  font-size: 17px;
-  color: #f0f9ff;
-}    
+  font-size: larger;
+}
+
+.unlogmenu{
+  height: 100%;
+  width: 600px;
+  /* padding-top: 9%; */
+  text-align: center;
+  font-size: larger;
+  
+}
 
 
 
@@ -276,14 +292,13 @@ html, body
 
 .loggedmenu{
   height: 100%;
-  width: 100%;
+  width: 600px;
   /* padding-top: 9%; */
   text-align: center;
   font-size: larger;
-  justify-content: space-around;
-  margin-left: -50%;
   display: flex;
-  
+  align-items: center;
+  margin-left: 165%;
 }
 
 .loggedmenu a{
@@ -294,6 +309,8 @@ html, body
 .loggedmenu ul{
   padding-top: 10%;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .loggedmenu ul li{
@@ -471,6 +488,14 @@ html, body
       text-align:center;
       padding-bottom:20px;
     }
+
+    .loggedmenu ul{
+      padding-top: 10%;
+      width: 100%;
+      display: flex;
+      gap: 5%;
+    }   
+
   }
   
   .footer-dark .item.text {
@@ -481,6 +506,13 @@ html, body
     .footer-dark .item.text {
       margin-bottom:0;
     }
+    .loggedmenu ul{
+      padding-top: 10%;
+      width: 100%;
+      display: flex;
+      gap: 5%;
+    }
+  
   }
   
   .footer-dark .item.text p {
@@ -497,6 +529,13 @@ html, body
       text-align:center;
       margin-top:20px;
     }
+    .loggedmenu ul{
+      padding-top: 10%;
+      width: 100%;
+      display: flex;
+      gap: 5%;
+    }
+
   }
   
   .footer-dark .item.social > a {
